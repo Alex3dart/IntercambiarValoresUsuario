@@ -1,20 +1,13 @@
-// IntercambiarValores.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+#include "IntercambiarValores.h"
 #include <iostream>
 
-int main()
+IntercambiarValores::IntercambiarValores(int m_a,int m_b) // Constructor
 {
-    std::cout << "Hello World!\n";
+	b = m_a; // El valor de b se cambia al valor del a que le hemos pasado desde main
+	a = m_b; // El valor de a se cambia al valor del b que le hemos pasado desde main
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+void IntercambiarValores::changeNumbers() // Muestra los valores cambiados
+{
+	std::cout << "Los nuevos valores son: " << a << " y " << b << std::endl;
+}
